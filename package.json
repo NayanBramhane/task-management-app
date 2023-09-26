@@ -4,6 +4,9 @@
   "description": "This is my first fullstack application with a focus on backend.",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
