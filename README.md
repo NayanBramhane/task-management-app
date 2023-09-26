@@ -1,5 +1,7 @@
 # Task Management App
 
+This is my first Back End Application.
+
 # Tech Stack & tools
 
 **NodeJS | Express | MongoDB | Mongoose | JsonWebToken | Cookie-Parser | Bcrypt | Dotenv | CORS**
