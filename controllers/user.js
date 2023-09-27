@@ -32,7 +32,7 @@ export const register = async (req, res, next) => {
     const { name, email, password } = req.body;
     let user = await User.findOne({ email });
 
-    if (!user) return next(new ErrorHandler("User already exists!", 400));
+    if (user) return next(new ErrorHandler("User already exists!", 400));
 
     const hashedPassword = await bcrypt.hash(password, 10);
     user = await User.create({ name, email, password: hashedPassword });
